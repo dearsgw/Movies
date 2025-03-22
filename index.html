@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Movies Download - Latest HD Movies | 480p, 720p, 1080p</title>
+    <meta name="description" content="Download the latest movies in HD quality – 480p, 720p, 1080p. Get direct links to Bollywood, Hollywood, South Indian, and Web Series.">
+    <meta name="keywords" content="movies download, latest movies 2024, Bollywood movies, Hollywood movies, South movies, web series download">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="YourWebsite.com">
+
+    <!-- Open Graph Meta Tags (Facebook & Social Media) -->
+    <meta property="og:title" content="Movies Download - Latest HD Movies | 480p, 720p, 1080p">
+    <meta property="og:description" content="Get the latest Bollywood, Hollywood, and South Indian movies in HD quality with fast download links.">
+    <meta property="og:image" content="your-logo-url.jpg">
+    <meta property="og:url" content="yourwebsite.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Movies Download - Latest HD Movies | 480p, 720p, 1080p">
+    <meta name="twitter:description" content="Fast and direct download links for the latest HD movies in 480p, 720p, 1080p.">
+    <meta name="twitter:image" content="your-logo-url.jpg">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        .search-bar {
+            margin: 20px 0;
+        }
+        .search-bar input {
+            width: 80%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .movie-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .movie {
+            width: 45%;
+            margin: 10px;
+            background: #fff;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .movie img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .movie a {
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .ad {
+            width: 300px;
+            height: 300px;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Download Latest HD Movies (2024)</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" id="searchInput" onkeyup="searchMovies()" placeholder="Search for a movie...">
+        </div>
+
+        <!-- 300x300 Ad Placement -->
+        <div class="ad">
+            <!-- Paste Your Ad Code Here -->
+            <p>Ad Placeholder (Replace with Ad Code)</p>
+        </div>
+
+        <!-- Movie List -->
+        <div class="movie-list" id="movieList">
+
+            <!-- Movie 1: Baby John -->
+            <div class="movie">
+                <img src="baby-john-movie.jpg" alt="Baby John Movie Poster">
+                <h2>Baby John (2024)</h2>
+                <a href="baby-john-movie-download.html">Download Now</a>
+            </div>
+
+            <!-- Movie 2: Baida -->
+            <div class="movie">
+                <img src="baida-movie.jpg" alt="Baida Movie Poster">
+                <h2>Baida (2024)</h2>
+                <a href="baida-movie-download.html">Download Now</a>
+            </div>
+
+            <!-- Movie 3: Example Movie -->
+            <div class="movie">
+                <img src="example-movie.jpg" alt="Example Movie Poster">
+                <h2>Example Movie (2024)</h2>
+                <a href="example-movie-download.html">Download Now</a>
+            </div>
+
+        </div>
+
+        <!-- 300x300 Ad Placement -->
+        <div class="ad">
+            <!-- Paste Your Ad Code Here -->
+            <p>Ad Placeholder (Replace with Ad Code)</p>
+        </div>
+
+    </div>
+
+    <!-- JavaScript for Search Functionality -->
+    <script>
+        function searchMovies() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let movies = document.querySelectorAll(".movie");
+
+            movies.forEach(movie => {
+                let title = movie.getElementsByTagName("h2")[0].innerText.toLowerCase();
+                if (title.includes(input)) {
+                    movie.style.display = "block";
+                } else {
+                    movie.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
